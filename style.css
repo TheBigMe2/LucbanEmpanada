@@ -1,0 +1,80 @@
+
+body {
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#fff8ed;
+    color:#3b2a1a;
+}
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    background:#8b4513;
+    color:white;
+}
+.logo{height:60px}
+nav a, nav button{
+    margin-left:15px;
+    text-decoration:none;
+    color:white;
+    background:none;
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+}
+.hero{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    padding:40px;
+}
+.hero img{
+    width:400px;
+    max-width:100%;
+    border-radius:20px;
+}
+.hero-text{
+    max-width:400px;
+    margin:20px;
+}
+section{
+    padding:50px 20px;
+    text-align:center;
+}
+section img{
+    width:350px;
+    max-width:100%;
+    border-radius:15px;
+}
+#statusBox{
+    font-size:24px;
+    margin:20px;
+    padding:15px;
+    border-radius:10px;
+}
+footer{
+    background:#8b4513;
+    color:white;
+    padding:15px;
+}
+.modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    justify-content:center;
+    align-items:center;
+}
+.modal-content{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+@media(max-width:768px){
+    .hero{flex-direction:column}
+}

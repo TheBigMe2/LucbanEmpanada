@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lucban Empanada | Lucbanin Bites Co.</title>
+<link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <img src="assets/logo.png" class="logo"/>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#product">Product</a>
+        <a href="#availability">Availability</a>
+        <a href="#contact">Contact</a>
+        <button onclick="openAuth()">Login / Sign Up</button>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Authentic Taste of Lucban</h1>
+        <p>Handcrafted Lucban Empanada made with tradition and love.</p>
+        <button onclick="scrollToSection('product')">Explore Product</button>
+    </div>
+    <img src="assets/empanada.jpg" />
+</section>
+
+<section id="about">
+    <h2>About Lucbanin Bites Co.</h2>
+    <p contenteditable="true">
+        We bring the heritage of Lucban straight to your table through our authentic empanada recipe passed down through generations.
+        Edit this text anytime.
+    </p>
+</section>
+
+<section id="product">
+    <h2>Our Lucban Empanada</h2>
+    <img src="assets/packs.jpg" />
+    <p contenteditable="true">
+        Crispy outside, flavorful inside. Perfect for merienda, pasalubong, or negosyo.
+        You can edit this description.
+    </p>
+</section>
+
+<section id="availability">
+    <h2>Product Availability</h2>
+    <div id="statusBox">Checking status...</div>
+    <button id="adminToggle" style="display:none;" onclick="toggleAvailability()">Toggle Availability (Admin)</button>
+</section>
+
+<section id="contact">
+    <h2>Follow Us</h2>
+    <p>Edit the links below to your real social media pages.</p>
+    <div class="socials">
+        <a href="#" contenteditable="true">Facebook</a>
+        <a href="#" contenteditable="true">Instagram</a>
+        <a href="#" contenteditable="true">TikTok</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Lucbanin Bites Co.</p>
+</footer>
+
+<div id="authModal" class="modal">
+    <div class="modal-content">
+        <h3>Login / Sign Up</h3>
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="register()">Sign Up</button>
+        <button onclick="login()">Login</button>
+        <button onclick="closeAuth()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
